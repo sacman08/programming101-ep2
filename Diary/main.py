@@ -7,7 +7,7 @@ def get_daily_input():
     return daily_diary
 
 def write_daily(diary):
-    filename = f'{datetime.now().strftime("%c")}.diary'
+    filename = f'Day_{datetime.now().strftime("%j")}.diary'
     with open(filename, 'w') as f:
         f.write(diary)
 
