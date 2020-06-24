@@ -1,5 +1,7 @@
 #Diary Application
-#TODO Entery daily information and save it to a file through the command line.
+#TODO Create escape keystroke to allow multiple lines with enter key. Currently only allows typing until you hit enter 
+
+#! /usr/bin/python
 from datetime import datetime
 
 def get_daily_input():
