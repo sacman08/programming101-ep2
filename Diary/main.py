@@ -1,8 +1,8 @@
 #Logging Application
-#TODO Add more descriptive date time for log file include year and time.
+#Part of PyATL's online series of programming applications.
 
 #! /usr/bin/python
-from datetime import datetime
+from datetime import date, datetime
 
 def get_daily_input():
     daily_diary = []
@@ -17,7 +17,7 @@ def get_daily_input():
     return daily_d.join(daily_diary)
 
 def write_daily(diary):
-    filename = f'Day_{datetime.now().strftime("%j")}.log'
+    filename = f'Log_{date.today()}_{datetime.now().strftime("%H%M%S")}.log'
     with open(filename, 'w') as f:
         f.write(diary)
 
